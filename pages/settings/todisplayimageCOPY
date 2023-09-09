@@ -1,0 +1,17 @@
+<?php
+
+    $image = $user['image'];
+
+    $userpic = $image;
+    $default = "img/default1.png";
+
+    if(file_exists($userpic)){
+        $profile_picture = $userpic;
+    }else{
+        $profile_picture = $default;
+    }
+    if(isset($profile_picture))
+    {
+        echo '<image src="'.$profile_picture.'" id="image" />';
+    }
+?>

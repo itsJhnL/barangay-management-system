@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+body,
+input {
+    font-family: "Poppins", sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 25vh;
+    
+}
+
+img {
+    margin-top: -225px;
+    height: 4.5cm;
+    border-radius: 50%;
+    background: #d1d1d1;
+    box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    width: 400px;
+    flex-direction: column;
+    gap: 41px;
+    background: #fff;
+    box-shadow: 16px 16px 32px #c8c8c8, -16px -16px 32px #fefefe;
+    border-radius: 24px;
+}
+
+.input-field {
+    position: relative;
+    width: 300px;
+    height: 50px;
+}
+
+.input-field input {
+    width: 100%;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+    color: #00372c;
+    font-size: 1em;
+    background: transparent;
+    border-bottom: 2px solid #E5D3B3;
+    transition: 0.1s;
+}
+
+.input-field span {
+    margin-top: -50px;
+    position: absolute;
+    transform: translateX(2px);
+    color: #00372c;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 3px;
+    border-radius: 8px;
+}
+
+.input-field input:valid~span,
+.input-field input:focus~span {
+    transform: translateX(180px) translateY(-15px);
+    font-size: 0.8em;
+    padding: 5px 15px;
+    background: #E5D3B3;
+    border-radius: 8px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: -78px;
+  }
+
+.login {
+    height: 45px;
+    width: 100px;
+    border-radius: 8px;
+    border: 2px solid #E5D3B3;
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.login:hover {
+    background-color: #E5D3B3;
+    color: #00372c;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.container .input-field .card{
+    flex-direction: row;
+}
+
+@media (max-width: 600px) and (max-height: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+/* Change autocomplete styles in WebKit */ /* to remove email color*/
+input:-webkit-autofill,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}

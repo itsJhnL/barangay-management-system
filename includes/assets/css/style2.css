@@ -1,0 +1,28 @@
+*{
+    margin: 0
+}
+
+.bg-color-nav {
+background-color: #0A7EC2;
+}
+
+.bg-color-sidenav {
+    background-color: #00518C;
+}
+
+.bg-card{
+    background-color: #0A7EC2;
+}
+
+.button-color{
+    background-color: #0A7EC2;
+    color: #fff;
+}
+
+.text-color {
+    color: #fff
+}
+
+.picture {
+    position: fixed;
+}
