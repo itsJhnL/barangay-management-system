@@ -14,7 +14,7 @@ input {
     
 }
 
-img {
+.logo_img {
     margin-top: -225px;
     height: 4.5cm;
     border-radius: 50%;

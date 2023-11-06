@@ -27,7 +27,7 @@
                     {
                     while($row = mysqli_fetch_array($query))
                     echo'
-                    <image src="pages/settings/img/'.basename($row['image']).'" style="border-radius: 50%" alt="" class="w-auto" height="150">';
+                    <img src="pages/settings/img/'.basename($row['image']).'" class="logo_img" style="border-radius: 50%" alt="" class="w-auto" height="150">';
 
                     }
 
